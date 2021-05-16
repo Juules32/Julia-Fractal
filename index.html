@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.5.1/math.min.js"></script>
+    </header>
+    <main>
+        <div id="canvas_container">
+            <canvas id="canvas" style="border:1px solid #d3d3d3;"></canvas>
+        </div>
+        <select id="type_of_fractal">
+            <option value="Julia">Filled Julia Set </option>
+            <option value="Mandelbrot">Mandelbrot Set</option>
+        </select>
+        <select id="color_type">
+            <option value="blue">Blue/Yellow</option>
+            <option value="random">Random</option>
+        </select>
+        </br>
+        <input type="number" id="max_iterations" value="20">Maximum Iterations</input>
+        </br>
+        <input type="number" id="max_colors" value="20">Amount of colors</input>
+        </br>
+        <input type="number" id="side_length" value="400">Size of canvas</input>
+        </br>
+        <input id="julia_c_re" value="0.3860"></input>
+        <input id="julia_c_im" value="0.1408">Julia constant</input>
+        </br>
+        <button id="button" onclick="run()">Generate</button>
+        <script src="main.js"></script>
+    </main>
+    <footer>
+
+    </footer>
+</html>
